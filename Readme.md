@@ -1,16 +1,15 @@
-随便写的东西：
-处理示波器之类的图片举行矫正问题（虽然实际生产的只有1500*1500的方形，这个随便改吧，我懒（.py源文件就在那~））
+### Just run create-reg.py and then run Squarize-install.
 
-权限问腿好麻烦，没有解决
-奇奇怪怪，有些位置的图片用不了（得改权限，双向选一边~）
-总之，能用的文件夹（桌面啊之类的）里处理图片的话，log同级产生，不能的，原地飞天。
-要想装来玩一玩的话：
+It will add this script to the right-click menu, so when you open a PNG or JPG directly through it, you can squarize it.
 
-1. 东西随便打包到xxx。
-2. bat中地址改一下（exe的新地址：xxx\Square-DP.exe）
-3. red中地址改一下（bat的新地址: xxx\Square-DP.bat（没错就是套娃））
-4. 再右键双击运行reg就能快乐右键了(Squarize)
+If you already have a Python environment, you can just change the reg file and link the ICO and Python files I provided in GetEXE accordingly. 
+I used Nuitka to compile and squeeze the size of the EXE by about 30% for my program, but it's still got a ridiculous size. 
+Well, we all know why — Python's structure still doesn't support squeezing the package down to just grab the useful parts. 
+Maybe in the not-too-distant future, AI will help us with that, lmao.
 
-就这样。
+Btw, I love SVGs, but I don't think that when you create a fantastic SVG by code, you would still need to square it manually with the mouse.
+This staff is really just meant for dealing with those Unpleasant photos from casual recordings like the stupid oscilloscope screen captures done by phone.
 
-—— Startemplib
+It's definitely not the best solution, but it works.
+
+— Startemplib
