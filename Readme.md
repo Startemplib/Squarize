@@ -1,4 +1,4 @@
-### Just run create-reg.py and then run Squarize-install.
+### Just run create-reg.bat and then run Squarize-install.
 
 It will add this script to the right-click menu, so when you open a PNG or JPG directly through it, you can squarize it.
 
