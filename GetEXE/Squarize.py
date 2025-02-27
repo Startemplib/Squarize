@@ -116,10 +116,11 @@ def mouse_callback(event, x, y, flags, param):
         points.append([x, y])
 
         img_height, img_width = img.shape[:2]
-        size_factor = img_width / 700
-        point_radius = int(3 * size_factor)
-        font_scale = 0.5 * size_factor
-        font_thickness = int(1 * size_factor)
+        size_factor = img_width / 300
+        point_radius = int(1.5 * size_factor)
+        font_scale = 0.3 * size_factor
+        font_thickness = int(0.5 * size_factor)
+        txtpos = int(point_radius * 0.7)
 
         if ii == 0:
             color = (0, 255, 0)
@@ -128,15 +129,16 @@ def mouse_callback(event, x, y, flags, param):
 
         cv2.line(image, (x - point_radius, y), (x + point_radius, y), color, 2)
         cv2.line(image, (x, y - point_radius), (x, y + point_radius), color, 2)
-        cv2.putText(
-            image,
-            str(len(points)),
-            (x + 5, y - 5),
-            cv2.FONT_HERSHEY_COMPLEX,
-            font_scale,
-            color,
-            font_thickness,
-        )
+        if font_scale > 0.47:
+            cv2.putText(
+                image,
+                str(len(points)),
+                (x + txtpos + 3, y - txtpos - 3),
+                cv2.FONT_HERSHEY_COMPLEX,
+                font_scale,
+                color,
+                font_thickness,
+            )
 
 
 def adjust_to_mouse_center(img_cv, zoom_factor, mouse_x, mouse_y):
