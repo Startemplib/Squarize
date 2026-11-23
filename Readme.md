@@ -13,3 +13,6 @@ This staff is really just meant for dealing with those Unpleasant photos from ca
 It's definitely not the best solution, but it works.
 
 — Startemplib
+
+
+### Btw, as you can see, I only covered the Windows side, but if you’re on Linux, deploying this Python script should be pretty easy for you.
